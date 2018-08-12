@@ -20,6 +20,10 @@ const signin = (req, res) {
   })
 }
 
+const signup = (req, res){
+  
+}
+
 module.exports = {
   
 };
