@@ -1,0 +1,32 @@
+{
+  "name": "fancy-todo-server",
+  "version": "1.0.0",
+  "description": "Portfolio #2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kneric/Fancy-ToDo-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kneric/Fancy-ToDo-Server/issues"
+  },
+  "homepage": "https://github.com/kneric/Fancy-ToDo-Server#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "google-calendar": "^1.3.2",
+    "googleapis": "^32.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.7",
+    "unsplash-js": "^4.8.0"
+  }
+}
