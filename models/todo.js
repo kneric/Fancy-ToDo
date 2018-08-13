@@ -20,7 +20,6 @@ const TodoSchema = new Schema({
     min: 1,
     max: 5
   },
-  tags: [],
 }, {timestamps: true})
 
 
