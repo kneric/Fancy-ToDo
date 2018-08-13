@@ -5,11 +5,7 @@ const saltRounds = 8;
 
 const UserSchema = new Schema({
   idFB: String,
-  username: {
-    type: String,
-    required: [true, 'username is required'],
-    unique: true
-  },
+  name: String,
   email: {
     type: String,
     required: [true, 'email is required'],

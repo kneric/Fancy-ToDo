@@ -3,6 +3,14 @@ const router = express.Router();
 const Todo = require('../controllers/todo')
 
 router.route('/')
-  .get(Todo)
+  .get()
+  .post()
+
+router.route('/:id')
+  .put()
+  .delete()
+
+router.route('/images')
+  .post()
 
 module.exports = router;

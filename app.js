@@ -6,7 +6,7 @@ require('dotenv').config();
 const cors = require('cors');
 
 const index = require('./routes/index');
-// const todo = require('./routes/todo');
+const todo = require('./routes/todo');
 
 mongoose.connect(`${process.env.mongoURI}`, {useNewUrlParser: true})
 .then(()=> {
@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 app.use('/', index);
-// app.use('/todo', todo);
+app.use('/todo', todo);
 
 app.listen(port, ()=> {
   console.log(`listening to ${port}`);
