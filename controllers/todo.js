@@ -57,6 +57,16 @@ const updateTodo = (req, res) => {
   })
 }
 
+const deleteTodo = (req, res) => {
+  Todo.Model.findByIdAndDelete(req.params.id)
+  .then(deletedTodo => {
+    res.status(200).json({deletedTodo, message: 'todo deleted'})
+  })
+  .catch(err => {
+    res.status(500).json({message: err});
+  })
+}
+
 module.exports = {
   createTodo,
   listTodo,
