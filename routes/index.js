@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const Index = require('../controllers/index')
+const {signin, signup, loginFB} = require('../controllers/index')
 
 router
-  .post('/signup', Index.signup)
-  .post('/signin', Index.signin)
-  .post('/loginfb', Index.loginfb)
+  .post('/signup', signup)
+  .post('/signin', signin)
+  .post('/loginfb', loginFB)
 
 module.exports = router;
