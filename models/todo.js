@@ -15,7 +15,11 @@ const TodoSchema = new Schema({
     required: [true, 'input the deadline!']
   },
   description: String,
-  priority: String, // low, normal, high
+  priority: {
+    type: Number,
+    min: 1,
+    max: 5
+  },
   tags: [],
 }, {timestamps: true})
 

@@ -1,8 +1,13 @@
 const jwt = require ('jsonwebtoken');
 const Todo = require('../models/todo')
 
-class ControllerTodo{
+const createTodo = (req, res)=> {
   
 }
 
-module.exports = ControllerTodo
+module.exports = {
+  createTodo,
+  listTodo,
+  updateTodo,
+  deleteTodo
+};
