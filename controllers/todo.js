@@ -57,6 +57,10 @@ const updateTodo = (req, res) => {
   })
 }
 
+const deleteTodo = (req, res) => {
+  Todo.remove({})
+}
+
 module.exports = {
   createTodo,
   listTodo,
